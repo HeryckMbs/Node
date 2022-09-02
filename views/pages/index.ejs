@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head'); %>
+
+    <body class="container">
+        <%- include('../partials/header'); %>
+
+            <main>
+                <div style="margin-top: 10px;" class="text-center bg-primary">
+                    <h1 class="bg-danger">NODE COM EJS</h1>
+                    <p>Abobrinhas</p>
+                </div>
+
+                <ul>
+                    <% qualidades.forEach(function(qualidade){ %>
+                        <li>
+                            <strong><%= qualidade.title %></strong><%= qualidade.message %>
+                        </li>
+
+                        <% }) %>
+
+                </ul>
+            </main>
+            <%- include('../partials/footer') %>
+    </body>
+
+</html>
